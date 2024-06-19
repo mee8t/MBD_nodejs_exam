@@ -1,0 +1,2 @@
+2)What is a Module in Node.js?
+ans-> In node.js module like  a library  we can use module with the help of require() keywords.

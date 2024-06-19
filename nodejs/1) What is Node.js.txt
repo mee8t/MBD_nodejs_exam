@@ -1,0 +1,2 @@
+1) What is Node.js?
+ans-> node.js  a scripting  language use node application to add function s in it. support javascript 

@@ -1,0 +1,20 @@
+5)Create a Node.js file for deleting the existing file using the File
+System module. 
+
+ans -> const fs = require('fs');
+ const path = require('path');
+
+ const filePathTODelet = path.join(__dirname,"sample.html");
+ fs. access(filePathTODelet,fs.constants.F_OK,(err)=>{
+    if (err){
+        console.log(`${filePathTODelet} is not vaild`);
+        return;
+    }
+    fs.unlink(filePathTODelet,(err)=>{
+        if (err){
+        console.error(`error deleting ${filePathTODelet}:{err}`);
+return;
+        }
+    })
+    console.log(`${filePathTODelet} has been deleted`);
+ });
